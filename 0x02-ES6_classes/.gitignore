@@ -1,0 +1,19 @@
+# Node.js
+node_modules/
+npm-debug.log
+
+# Babel
+.babelrc
+babel.config.js
+
+# ESLint
+.eslintcache
+.eslintignore
+
+# Jest
+coverage/
+
+# Other
+.DS_Store
+.env
+*.log
