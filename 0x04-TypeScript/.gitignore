@@ -1,43 +1,4 @@
 # Node modules
 node_modules/
-
-# Compiled JavaScript files
-*.js
-*.js.map
-
-# Compiled TypeScript definition files
-*.d.ts
-
-# TypeScript configuration
-tsconfig.json
-tsconfig.tsbuildinfo
-
-# Editor and OS specific files
-.vscode/
-.DS_Store
-Thumbs.db
-
-# Environment variables
-.env
-.env.local
-.env.*.local
-
-# Logs
-*.log
-
-# Dependency directory (from npm or yarn)
-.pnp/
-.pnp.js
-
-# Optional npm debug log file
-npm-debug.log*
-
-# Yarn Integrity file
-.yarn-integrity
-
-# IDE settings
-.idea/
-*.code-workspace
-
-# OS generated files
-.DS_Store
+dist/
+package-lock.json
