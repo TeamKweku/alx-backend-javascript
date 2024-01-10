@@ -46,6 +46,26 @@ function createEmployee(salary: number | string): Director | Teacher {
   }
 }
 
-// console.log(createEmployee(200));
-// console.log(createEmployee(1000));
-// console.log(createEmployee('$500'));
+function isDirector(
+  employee: DirectorInterface | TeacherInterface
+): employee is DirectorInterface {
+  return (employee as DirectorInterface).workDirectorTasks !== undefined;
+}
+
+function executeWork(employee: DirectorInterface | TeacherInterface): string {
+  if (isDirector(employee)) {
+    return employee.workDirectorTasks();
+  } else {
+    return employee.workTeacherTasks();
+  }
+}
+
+type Subjects = 'Math' | 'History';
+
+function teachClass(todayClass: Subjects): string {
+  if (todayClass === 'Math') {
+    return 'Teaching Math';
+  } else if (todayClass === 'History') {
+    return 'Teaching History';
+  }
+}
